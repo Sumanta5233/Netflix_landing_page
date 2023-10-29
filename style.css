@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+}
+
+.lang-btn i {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.header-cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-cont h1 {
+    font-size: 45px;
+    line-height: 70px;
+    font-weight: 900;
+    width: 1240px;
+}
+
+.header-cont h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.header-cont p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[type="email"] {
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: 1px solid #fff;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 20px 20px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+[type="submit"] {
+    background: #db0001;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 550;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.header-cont i {
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+[type="submit"]:hover {
+    background: #990000;
+}
+
+hr {
+    height: 8px;
+    background: rgb(41, 41, 41);
+    border: none;
+}
+
+.features {
+    font-size: 22px;
+}
+
+.feature_video{
+    position: absolute;
+    top: 78%;
+    height: 54%;
+    left: 56.8%;
+    z-index: -2;
+}
+
+.feature-video-2{
+    position: absolute;
+    top: 169.5%;
+    height: 50%;
+    left: 58.6%;
+    z-index: -2;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 12%;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.features p {
+    font-size: 25px;
+}
+
+.faq {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h1 {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 1142px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion .content {
+    font-size: 25px;
+    text-align: left;
+    padding: 0 20px;
+    background: #303030;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s, padding .5s;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 1s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.accordion input[type="checkbox"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="checkbox"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.form {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.email-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.footer {
+    padding: 50px 15% 10px;
+    color: #a4a0a0;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer h2 a {
+    color: #a4a0a0;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a {
+    display: block;
+    color: #a4a0a0;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.footer .lang-btn {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.last-text p{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(6, 6, 6);
+    font-weight: 300;
+}
+
+.last-text a{
+    color: #777;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 100px;
+    }
+
+    nav button {
+        padding: 5px 10px;
+    }
+
+    nav .lang-btn {
+        padding: 4px 8px;
+    }
+
+    .header-cont {
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+
+    .header-cont h1 {
+        font-size: 30px;
+        width: 338px;
+        line-height: 40px;
+    }
+    .header-cont h3{
+        font-size: 1.125rem;
+    }
+    .header-cont p{
+        font-size: 1.125rem;
+    }
+    .email, .email-1{
+        display: flex;
+        flex-direction: column;
+    }
+    [type="email"]{
+        width: 280px;
+        margin-bottom: 20px;
+    }
+    [type="submit"]{
+        font-size: 20px;
+    }
+    .row{
+        flex-direction: column;
+        padding: 50px 24px;
+        text-align: center;
+    }
+    .text-col h2{
+        font-size: 1.7rem;
+    }
+    .text-col p{
+        font-size: 1.125rem;
+    }
+    .row-1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .faq h1{
+        font-size: 30px;
+    }
+    .accordion li{
+        padding: 0;
+    }
+    .accordion li label{
+        font-size: 1.125rem;
+        margin: 0 20px;
+    }
+    .accordion .content{
+        font-size: 1.125rem;
+        margin: 5px 20px;
+    }
+    .form{
+        font-size: 1.125rem;
+        padding: 0 50px;
+    }
+    .footer{
+        padding: 30px 5%;
+    }
+    .footer h2{
+        font-size: 19px;
+    }
+    .footer .row{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .footer .row .col{
+        padding: 0 40px;
+        margin: 0;
+        text-align: left;
+    }
+    .footer .row .col a{
+        font-size: 10px;
+    }
+    .feature_video{
+        top: 98.2%;
+        height: 40.1%;
+        left: 21%;
+    }
+    .feature-video-2{
+        left: 26%;
+        height: 37%;
+        top: 199%;
+    }
+}
